@@ -1,13 +1,13 @@
 # homeassistan-ezviz
 =================================
-.. code:: bash
-camera:
-  - platform: demo
-    id: "yourdeviceid"
-    key: "appkey"
-    sec: "appsecret"
+
+    camera:
+      - platform: demo
+        id: "yourdeviceid"
+        key: "appkey"
+        sec: "appsecret"
     
-    
+参数说明   
 -----------------------------   
  deviceid 见 https://open.ys7.com/console/device.html
  
