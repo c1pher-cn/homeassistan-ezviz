@@ -3,7 +3,8 @@
 -----------------------------
 
     camera:
-      - platform: demo
+      - platform: ezviz
+        name: "name"
         id: "yourdeviceid"
         key: "appkey"
         sec: "appsecret"
