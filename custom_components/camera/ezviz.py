@@ -74,16 +74,17 @@ class EzvizCamera(Camera):
 
     @property
     def motion_detection_enabled(self):
-        """Camera Motion Detection Status."""
-        return self._motion_status
+        r = requests.post('https://open.ys7.com/api/lapp/device/info', data={'accessToken':self.accessToken,'deviceSerial':deviceSerial})
+        result = r.json()
+        return result.get('defence') == 1
 
     def enable_motion_detection(self):
-        """Enable the Motion detection in base station (Arm)."""
-        self._motion_status = True
+        r = requests.post('https://open.ys7.com/api/lapp/device/defence/set', data={'accessToken':self.accessToken,'deviceSerial':deviceSerial,'isDefence': 1})
+        self.schedule_update_ha_state()
 
     def disable_motion_detection(self):
-        """Disable the motion detection in base station (Disarm)."""
-        self._motion_status = False
+        r = requests.post('https://open.ys7.com/api/lapp/device/defence/set', data={'accessToken':self.accessToken,'deviceSerial':deviceSerial,'isDefence': 0})
+        self.schedule_update_ha_state()
 
     def get_token(key,secret):
         r = requests.post('https://open.ys7.com/api/lapp/token/get', data={'appKey':key,'appSecret':secret})
@@ -134,6 +135,7 @@ class EzvizCamera(Camera):
             else:
                 _LOGGER.info("get image error")
                 image_path = 'null'
+                return None
             try:
                 response = requests.get(image_path)
             except requests.exceptions.RequestException as error:
