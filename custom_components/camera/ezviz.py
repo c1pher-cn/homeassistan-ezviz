@@ -74,16 +74,16 @@ class EzvizCamera(Camera):
 
     @property
     def motion_detection_enabled(self):
-        r = requests.post('https://open.ys7.com/api/lapp/device/info', data={'accessToken':self.accessToken,'deviceSerial':deviceSerial})
+        r = requests.post('https://open.ys7.com/api/lapp/device/info', data={'accessToken':self.accessToken,'deviceSerial':self.deviceSerial})
         result = r.json()
         return result.get('defence') == 1
 
     def enable_motion_detection(self):
-        r = requests.post('https://open.ys7.com/api/lapp/device/defence/set', data={'accessToken':self.accessToken,'deviceSerial':deviceSerial,'isDefence': 1})
+        r = requests.post('https://open.ys7.com/api/lapp/device/defence/set', data={'accessToken':self.accessToken,'deviceSerial':self.deviceSerial,'isDefence': 1})
         self.schedule_update_ha_state()
 
     def disable_motion_detection(self):
-        r = requests.post('https://open.ys7.com/api/lapp/device/defence/set', data={'accessToken':self.accessToken,'deviceSerial':deviceSerial,'isDefence': 0})
+        r = requests.post('https://open.ys7.com/api/lapp/device/defence/set', data={'accessToken':self.accessToken,'deviceSerial':self.deviceSerial,'isDefence': 0})
         self.schedule_update_ha_state()
 
     def get_token(key,secret):
@@ -103,7 +103,7 @@ class EzvizCamera(Camera):
             return False
 
     def get_device_capture(deviceSerial):
-        r = requests.post('https://open.ys7.com/api/lapp/device/capture', data={'accessToken':self.accessToken,'deviceSerial':deviceSerial,'channelNo':1})
+        r = requests.post('https://open.ys7.com/api/lapp/device/capture', data={'accessToken':self.accessToken,'deviceSerial':self.deviceSerial,'channelNo':1})
         result = r.json()
         if (result['code']=='200'):
             return result['data']['picUrl']
