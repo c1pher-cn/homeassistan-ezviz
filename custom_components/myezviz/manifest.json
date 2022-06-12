@@ -1,0 +1,9 @@
+{
+  "domain": "myezviz",
+  "version": "1.0.0",
+  "name": "EZVIZ camera",
+  "documentation": "https://www.example.com",
+  "dependencies": [],
+  "codeowners": [],
+  "requirements": []
+}
