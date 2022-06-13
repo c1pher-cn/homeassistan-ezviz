@@ -3,7 +3,7 @@
 -----------------------------
 
     camera:
-      - platform: ezviz
+      - platform: myezviz
         name: "name"
         id: "yourdeviceid"
         key: "appkey"
