@@ -113,7 +113,9 @@ class EzvizCamera(Camera):
         return (self._next_snapshot_at is None or
                 now > self._next_snapshot_at)  
   
-    def camera_image(self):
+    def camera_image(
+              self, width: int , height: int 
+    ):
         """Return a faked still image response."""
         now = dt_util.utcnow()
         if self._ready_for_snapshot(now):
