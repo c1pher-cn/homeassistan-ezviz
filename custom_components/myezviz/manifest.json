@@ -7,6 +7,6 @@
   "issue_tracker": "https://github.com/c1pher-cn/homeassistan-ezviz/issues",
   "iot_class": "cloud_polling",
   "dependencies": [],
-  "codeowners": ['@c1pher','@_小愚_'],
+  "codeowners": ['@c1pher'],
   "requirements": []
 }
