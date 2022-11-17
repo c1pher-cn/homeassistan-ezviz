@@ -21,6 +21,7 @@
 版本说明
 -----------------------------
 master分支下支持最新custom_components文件格式，直接下载到对应目录即可不需要任何修改
+
 old分支下为老的custom_components文件格式
 
 
