@@ -2,9 +2,7 @@
     "name": "Photo captcha on Ezviz Camera for Home Assistant",
     "content_in_root": false,
     "render_readme": true,
-    "domains": [
-        "camera"
-    ],
-    "iot_class": "Cloud Polling",
+    "country":"CN",
+    "render_readme":true,
     "homeassistant": "2022.11.0"
 }
