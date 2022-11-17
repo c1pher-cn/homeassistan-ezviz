@@ -49,6 +49,5 @@ old分支下为老的custom_components文件格式
 
 b站 https://space.bilibili.com/15856864
 
-微博 https://weibo.com/u/1147593092
 
 
