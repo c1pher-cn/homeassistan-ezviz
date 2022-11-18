@@ -1,4 +1,4 @@
-# homeassistan-ezviz
+# //myezviz
 [![hacs_badge](https://img.shields.io/badge/HACS-Default-41BDF5.svg)](https://github.com/hacs/integration)
 
 配置说明
