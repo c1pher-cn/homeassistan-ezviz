@@ -1,5 +1,5 @@
 # //myezviz
-[![hacs_badge](https://img.shields.io/badge/HACS-Default-41BDF5.svg)](https://github.com/hacs/integration)
+[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=c1pher-cn&repository=homeassistan-ezviz&category=integration)
 
 配置说明
 -----------------------------
@@ -46,13 +46,17 @@ old分支下为老的custom_components文件格式
 
  
  
-
-
-
-其他问题，可私信联系
+问题支持
 -----------------------------
 
-b站 https://space.bilibili.com/15856864
+使用问题，请提issues，或者到b站专栏处留言 https://www.bilibili.com/read/cv19602064（个人看b站的频率高一点）
+
+提问情描述清楚自己的情况，让相同问题的人能看到，不要私信！！！！，不要私信！！！！，不要私信！！！！
+
+
+当然也欢迎 关注投币支持一下，咖啡就不用了
+
+
 
 
 
