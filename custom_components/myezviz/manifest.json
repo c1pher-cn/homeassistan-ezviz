@@ -1,12 +1,12 @@
 {
-  "name": "EZVIZ camera",
   "domain": "myezviz",
-  "version": "1.0.0",
   "name": "EZVIZ camera",
-  "documentation": "https://www.bilibili.com/read/cv19602064",
-  "issue_tracker": "https://github.com/c1pher-cn/homeassistan-ezviz/issues",
-  "iot_class": "cloud_polling",
-  "dependencies": [],
   "codeowners": ["@_小愚_"],
-  "requirements": []
+  "dependencies": [],
+  "documentation": "https://www.bilibili.com/read/cv19602064",
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/c1pher-cn/homeassistan-ezviz/issues",
+  "name": "EZVIZ camera",
+  "requirements": [],
+  "version": "1.0.0"
 }
